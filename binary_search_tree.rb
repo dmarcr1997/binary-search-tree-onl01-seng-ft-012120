@@ -5,7 +5,7 @@ class BST
         @left = nil
         @right = nil
     end
-    
+
     def each(&block)
         left.each(&block) if left
         block.call(data)
